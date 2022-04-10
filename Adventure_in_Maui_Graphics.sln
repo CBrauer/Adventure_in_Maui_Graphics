@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32210.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adventure_in_Maui_Graphics", "Adventure_in_Maui_Graphics.csproj", "{3171F206-4154-4A2A-816C-491859877D7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3171F206-4154-4A2A-816C-491859877D7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3171F206-4154-4A2A-816C-491859877D7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3171F206-4154-4A2A-816C-491859877D7F}.Debug|x64.ActiveCfg = Debug|x64
+		{3171F206-4154-4A2A-816C-491859877D7F}.Debug|x64.Build.0 = Debug|x64
+		{3171F206-4154-4A2A-816C-491859877D7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3171F206-4154-4A2A-816C-491859877D7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3171F206-4154-4A2A-816C-491859877D7F}.Release|x64.ActiveCfg = Release|x64
+		{3171F206-4154-4A2A-816C-491859877D7F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC824117-D152-4973-88CB-6AF097684EFE}
+	EndGlobalSection
+EndGlobal

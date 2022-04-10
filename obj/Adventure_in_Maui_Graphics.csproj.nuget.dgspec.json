@@ -1,0 +1,99 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Temp\\Adventure_in_Maui_Graphics\\Adventure_in_Maui_Graphics.csproj": {}
+  },
+  "projects": {
+    "C:\\Temp\\Adventure_in_Maui_Graphics\\Adventure_in_Maui_Graphics.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Temp\\Adventure_in_Maui_Graphics\\Adventure_in_Maui_Graphics.csproj",
+        "projectName": "Adventure_in_Maui_Graphics",
+        "projectPath": "C:\\Temp\\Adventure_in_Maui_Graphics\\Adventure_in_Maui_Graphics.csproj",
+        "packagesPath": "C:\\Users\\cbrau\\.nuget\\packages\\",
+        "outputPath": "C:\\Temp\\Adventure_in_Maui_Graphics\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cbrau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1701"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Maui.Graphics": {
+              "target": "Package",
+              "version": "[6.0.200-preview.13.935, )"
+            },
+            "Microsoft.Maui.Graphics.Skia": {
+              "target": "Package",
+              "version": "[6.0.200-preview.13.935, )"
+            },
+            "SkiaSharp.Views": {
+              "target": "Package",
+              "version": "[2.80.3, )"
+            },
+            "SkiaSharp.Views.Desktop.Common": {
+              "target": "Package",
+              "version": "[2.80.3, )"
+            },
+            "alglib.net": {
+              "target": "Package",
+              "version": "[3.18.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300-preview.22154.4\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
