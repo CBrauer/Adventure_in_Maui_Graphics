@@ -1,8 +1,9 @@
 # Adventure_in_Maui_Graphics
 This Repo shows how to use Maui Graphics to develop charts and meters.
 
-At this time, the App is developed as a Windows Form, using .NET Core 6, and a
-pre-release of Maui Graphics.
+At this time, the application is developed as a Windows Form App, using .NET Core 6, and a
+pre-release of Maui Graphics, and a pre-release of Visual Studio (Version 17.2.0 Preview 2.1
+).
 
 Here is a screen capture of the running program:
 
@@ -10,6 +11,6 @@ Here is a screen capture of the running program:
 
 Please resize the form to see the redraw speed of Maui Graphics.
 
-Any comment will be greatly appreciated.
+Enjoy.
 
 Charles
