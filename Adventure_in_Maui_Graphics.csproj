@@ -12,10 +12,10 @@
 	<ItemGroup>
 		<PackageReference Include="alglib.net" Version="3.18.2" />
 		<PackageReference Include="MathNet.Numerics" Version="5.0.0" />
-		<PackageReference Include="Microsoft.Maui.Graphics" Version="6.0.200-preview.13.935" />
-		<PackageReference Include="Microsoft.Maui.Graphics.Skia" Version="6.0.200-preview.13.935" />
-		<PackageReference Include="SkiaSharp.Views" Version="2.80.3" />
-		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="2.80.3" />
+		<PackageReference Include="Microsoft.Maui.Graphics" Version="6.0.300" />
+		<PackageReference Include="Microsoft.Maui.Graphics.Skia" Version="6.0.300" />
+		<PackageReference Include="SkiaSharp.Views" Version="2.88.0" />
+		<PackageReference Include="SkiaSharp.Views.Desktop.Common" Version="2.88.0" />
 	</ItemGroup>
 
 </Project>

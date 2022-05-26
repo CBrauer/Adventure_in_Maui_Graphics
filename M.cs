@@ -26,8 +26,8 @@ public class M_ {
   public float DotRadius { get; set; } = 2.0f;
   public float LineThickness { set; get; }
   public float FontSize { get; set; } = 24;
-  public int Offset { get; set; } = 150;
-  public float tickLength { get; set; } = 30f;
+  public int Offset { get; set; } = 130;
+  public float tickLength { get; set; } = 20f;
   #endregion
 
   #region EraseChart
@@ -120,7 +120,7 @@ public class M_ {
     var radius = (float) circleRadius;
     var X = (float) x;
     var Y = canvasHeight - (float) y;
-    Debug.Assert(canvas != null);
+    Debug.Assert(canvas != null, "canvas is null in DrawFilledCircle");
     canvas.FillColor = color;
     canvas.FillCircle(X, Y, radius);
   }
@@ -137,13 +137,19 @@ public class M_ {
                       bool closed,
                       Color color) 
   {
-    var radius = (float) width;
+    Debug.Assert(canvas != null, "canvas is null in DrawArc");
     var X = (float) x;
-    var Y = canvasHeight - (float) y;
-    Debug.Assert(canvas != null);
+    var Y = canvasHeight - (float) y;  // Convert to Cartesian coordinates
     canvas.StrokeColor = color;
     canvas.StrokeSize = 10;
-    canvas.DrawArc(X, Y, (float) width, (float) height, (float) startAngle, (float) endAngle, clockwise, closed);
+    canvas.DrawArc(X,
+                   Y,
+                   (float) width,
+                   (float) height,
+                   (float) startAngle,
+                   (float) endAngle,
+                   clockwise,
+                   closed);
   }
   #endregion
 
@@ -196,7 +202,7 @@ public class M_ {
       SizeF stringSize = canvas.GetStringSize(text, font, fontSize);
       var textWidth = stringSize.Width * 1.1f;
       var textHeight = stringSize.Height;
-      Rectangle stringRect;
+      Rect stringRect;
       PointF stringLocation;
 
       var h = HorizontalAlignment.Center;

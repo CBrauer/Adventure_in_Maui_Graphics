@@ -7,7 +7,7 @@ namespace Adventure_in_Maui_Graphics;
 public class TestPattern {
 
   #region Properties
-  public M_? M { get; set; }
+  public M_ M { get; set; }
   public float canvasWidth { get; set; } = 100;
   public float canvasHeight { get; set; } = 100;
 
@@ -29,17 +29,36 @@ public class TestPattern {
     }
     set {
       lineThickness = value;
+      M.LineThickness = lineThickness;
       Debug.WriteLine($"LineThickness is now {LineThickness}");
     }
   }
-  public float FontSize { get; set; } = 24;
-  public int Offset { get; set; } = 150;
-  public float tickLength { get; set; } = 30f;
+  private float fontSize = 18;
+  public float FontSize {
+    get => fontSize;
+    set {
+      fontSize = value;
+      M.FontSize = fontSize;
+    }
+  }
+  private int offset = 200;
+  public int Offset {
+    get {
+      return offset;
+    }
+    set {
+      offset = value;
+      M.Offset = offset;
+      // Debug.WriteLine($"Offset is now {offset}");
+    }
+  }
+  public float tickLength { get; set; } = 20f;
   #endregion
 
   public void Draw() {
     try {
       Debug.Assert(M != null);
+      Offset = 100;
       var (lx, ly, rx, uy) = M.GetAxis();
       var midX = (lx + rx) / 2.0f;
       var midY = (ly + uy) / 2.0f;

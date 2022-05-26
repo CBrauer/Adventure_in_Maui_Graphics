@@ -20,7 +20,7 @@
           "lib/net6.0/MathNet.Numerics.dll": {}
         }
       },
-      "Microsoft.Maui.Graphics/6.0.200-preview.13.935": {
+      "Microsoft.Maui.Graphics/6.0.300": {
         "type": "package",
         "dependencies": {
           "System.Numerics.Vectors": "4.5.0"
@@ -32,11 +32,11 @@
           "lib/netstandard2.1/Microsoft.Maui.Graphics.dll": {}
         }
       },
-      "Microsoft.Maui.Graphics.Skia/6.0.200-preview.13.935": {
+      "Microsoft.Maui.Graphics.Skia/6.0.300": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Maui.Graphics": "6.0.200-preview.13.935",
-          "SkiaSharp": "2.88.0-preview.179"
+          "Microsoft.Maui.Graphics": "6.0.300",
+          "SkiaSharp": "2.88.0"
         },
         "compile": {
           "lib/netstandard2.1/Microsoft.Maui.Graphics.Skia.dll": {}
@@ -93,11 +93,11 @@
           "lib/net20/OpenTK.GLControl.dll": {}
         }
       },
-      "SkiaSharp/2.88.0-preview.179": {
+      "SkiaSharp/2.88.0": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Win32": "2.88.0-preview.179",
-          "SkiaSharp.NativeAssets.macOS": "2.88.0-preview.179",
+          "SkiaSharp.NativeAssets.Win32": "2.88.0",
+          "SkiaSharp.NativeAssets.macOS": "2.88.0",
           "System.Memory": "4.5.3"
         },
         "compile": {
@@ -107,7 +107,7 @@
           "lib/netstandard2.0/SkiaSharp.dll": {}
         }
       },
-      "SkiaSharp.NativeAssets.macOS/2.88.0-preview.179": {
+      "SkiaSharp.NativeAssets.macOS/2.88.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.3/_._": {}
@@ -122,7 +122,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Win32/2.88.0-preview.179": {
+      "SkiaSharp.NativeAssets.Win32/2.88.0": {
         "type": "package",
         "compile": {
           "lib/netstandard1.3/_._": {}
@@ -145,14 +145,14 @@
           }
         }
       },
-      "SkiaSharp.Views/2.80.3": {
+      "SkiaSharp.Views/2.88.0": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.80.3",
-          "SkiaSharp.Views.Desktop.Common": "2.80.3",
-          "SkiaSharp.Views.Gtk2": "2.80.3",
-          "SkiaSharp.Views.WPF": "2.80.3",
-          "SkiaSharp.Views.WindowsForms": "2.80.3"
+          "SkiaSharp": "2.88.0",
+          "SkiaSharp.Views.Desktop.Common": "2.88.0",
+          "SkiaSharp.Views.Gtk2": "2.88.0",
+          "SkiaSharp.Views.WPF": "2.88.0",
+          "SkiaSharp.Views.WindowsForms": "2.88.0"
         },
         "compile": {
           "lib/net462/SkiaSharp.Views.Desktop.dll": {}
@@ -161,10 +161,10 @@
           "lib/net462/SkiaSharp.Views.Desktop.dll": {}
         }
       },
-      "SkiaSharp.Views.Desktop.Common/2.80.3": {
+      "SkiaSharp.Views.Desktop.Common/2.88.0": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.80.3",
+          "SkiaSharp": "2.88.0",
           "System.Drawing.Common": "4.5.1"
         },
         "compile": {
@@ -174,11 +174,11 @@
           "lib/netcoreapp3.1/SkiaSharp.Views.Desktop.Common.dll": {}
         }
       },
-      "SkiaSharp.Views.Gtk2/2.80.3": {
+      "SkiaSharp.Views.Gtk2/2.88.0": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.80.3",
-          "SkiaSharp.Views.Desktop.Common": "2.80.3"
+          "SkiaSharp": "2.88.0",
+          "SkiaSharp.Views.Desktop.Common": "2.88.0"
         },
         "compile": {
           "lib/net462/SkiaSharp.Views.Gtk.dll": {}
@@ -187,13 +187,13 @@
           "lib/net462/SkiaSharp.Views.Gtk.dll": {}
         }
       },
-      "SkiaSharp.Views.WindowsForms/2.80.3": {
+      "SkiaSharp.Views.WindowsForms/2.88.0": {
         "type": "package",
         "dependencies": {
           "OpenTK": "3.1.0",
           "OpenTK.GLControl": "3.1.0",
-          "SkiaSharp": "2.80.3",
-          "SkiaSharp.Views.Desktop.Common": "2.80.3"
+          "SkiaSharp": "2.88.0",
+          "SkiaSharp.Views.Desktop.Common": "2.88.0"
         },
         "compile": {
           "lib/netcoreapp3.1/SkiaSharp.Views.WindowsForms.dll": {}
@@ -202,11 +202,11 @@
           "lib/netcoreapp3.1/SkiaSharp.Views.WindowsForms.dll": {}
         }
       },
-      "SkiaSharp.Views.WPF/2.80.3": {
+      "SkiaSharp.Views.WPF/2.88.0": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.80.3",
-          "SkiaSharp.Views.Desktop.Common": "2.80.3"
+          "SkiaSharp": "2.88.0",
+          "SkiaSharp.Views.Desktop.Common": "2.88.0"
         },
         "compile": {
           "lib/netcoreapp3.1/SkiaSharp.Views.WPF.dll": {}
@@ -302,15 +302,15 @@
         "mathnet.numerics.nuspec"
       ]
     },
-    "Microsoft.Maui.Graphics/6.0.200-preview.13.935": {
-      "sha512": "rSiV/TBAX3puzIl6+z+/slqzwBbZK6+wCtALjEXolCWPznkJG16Fy5UlH1J+fSDfKt7PqCElBZGtERr16liBsg==",
+    "Microsoft.Maui.Graphics/6.0.300": {
+      "sha512": "R1T1G5oHAydxCaQgj7ZPjwMXK2GJC0/+kDLmwLCdZ5P5rYlXwOW4GcQULAsNWz6jDUaTT7pbAeiKwxI1pVPEQQ==",
       "type": "package",
-      "path": "microsoft.maui.graphics/6.0.200-preview.13.935",
+      "path": "microsoft.maui.graphics/6.0.300",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/monoandroid10.0/Microsoft.Maui.Graphics.dll",
-        "lib/monoandroid10.0/Microsoft.Maui.Graphics.pdb",
+        "lib/monoandroid12.0/Microsoft.Maui.Graphics.dll",
+        "lib/monoandroid12.0/Microsoft.Maui.Graphics.pdb",
         "lib/net6.0-android30.0/Microsoft.Maui.Graphics.dll",
         "lib/net6.0-android30.0/Microsoft.Maui.Graphics.pdb",
         "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.dll",
@@ -331,19 +331,19 @@
         "lib/xamarin.ios10/Microsoft.Maui.Graphics.pdb",
         "lib/xamarin.mac20/Microsoft.Maui.Graphics.dll",
         "lib/xamarin.mac20/Microsoft.Maui.Graphics.pdb",
-        "microsoft.maui.graphics.6.0.200-preview.13.935.nupkg.sha512",
+        "microsoft.maui.graphics.6.0.300.nupkg.sha512",
         "microsoft.maui.graphics.nuspec"
       ]
     },
-    "Microsoft.Maui.Graphics.Skia/6.0.200-preview.13.935": {
-      "sha512": "1wrjwz3jHcwO/9TU7MXJKX/sf5BvfFW/FgpqoTn7ytz2bSaKXeVSgKZwX69XIiZotdEjKerCTrWrRV/Te67zOw==",
+    "Microsoft.Maui.Graphics.Skia/6.0.300": {
+      "sha512": "uMaAZrAOHBYWTDBGhTRzPLojAHUrgAKisOJsWjA282D4QZsFkqPFudDHTqteCzumkaT9QoxYeFoYd4deQymlaA==",
       "type": "package",
-      "path": "microsoft.maui.graphics.skia/6.0.200-preview.13.935",
+      "path": "microsoft.maui.graphics.skia/6.0.300",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/monoandroid10.0/Microsoft.Maui.Graphics.Skia.dll",
-        "lib/monoandroid10.0/Microsoft.Maui.Graphics.Skia.pdb",
+        "lib/monoandroid12.0/Microsoft.Maui.Graphics.Skia.dll",
+        "lib/monoandroid12.0/Microsoft.Maui.Graphics.Skia.pdb",
         "lib/net6.0-android30.0/Microsoft.Maui.Graphics.Skia.dll",
         "lib/net6.0-android30.0/Microsoft.Maui.Graphics.Skia.pdb",
         "lib/net6.0-ios13.6/Microsoft.Maui.Graphics.Skia.dll",
@@ -364,7 +364,7 @@
         "lib/xamarin.ios10/Microsoft.Maui.Graphics.Skia.pdb",
         "lib/xamarin.mac20/Microsoft.Maui.Graphics.Skia.dll",
         "lib/xamarin.mac20/Microsoft.Maui.Graphics.Skia.pdb",
-        "microsoft.maui.graphics.skia.6.0.200-preview.13.935.nupkg.sha512",
+        "microsoft.maui.graphics.skia.6.0.300.nupkg.sha512",
         "microsoft.maui.graphics.skia.nuspec"
       ]
     },
@@ -434,10 +434,10 @@
         "opentk.glcontrol.nuspec"
       ]
     },
-    "SkiaSharp/2.88.0-preview.179": {
-      "sha512": "X4O4Pyinoc+bEh7HPvJexvDD8HX5W5Y2xFQFYR79O9RE5CMz+fAdhCenNgV+4sd7pkIazXPurzsitkYSxaQzTA==",
+    "SkiaSharp/2.88.0": {
+      "sha512": "OKBrwZ4TdRjPjl2tVFbcakyNZBI9zBGFzZKr6DbhgybVpjiBMvIQbbbN4Wfl0lts0TJ5AwHDr6EO7zusJJOamQ==",
       "type": "package",
-      "path": "skiasharp/2.88.0-preview.179",
+      "path": "skiasharp/2.88.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -492,14 +492,14 @@
         "lib/xamarinwatchos1.0/SkiaSharp.dll",
         "lib/xamarinwatchos1.0/SkiaSharp.pdb",
         "lib/xamarinwatchos1.0/SkiaSharp.xml",
-        "skiasharp.2.88.0-preview.179.nupkg.sha512",
+        "skiasharp.2.88.0.nupkg.sha512",
         "skiasharp.nuspec"
       ]
     },
-    "SkiaSharp.NativeAssets.macOS/2.88.0-preview.179": {
-      "sha512": "CxLJ5IpX4bXDHSXLMxITNTW6Pj/xvAZ1/MFI1q0ll7DmDS5zPyAagGwQn8Y6ahNzOSo3NH4iva2VPjS3FPCPVA==",
+    "SkiaSharp.NativeAssets.macOS/2.88.0": {
+      "sha512": "tfcr1Bnye1lsBbsskqtlkZrFDBZfIEfJoGzJ6nnJF1sSDs8zzdiuL7PjEUDEh5iHb6Wbc0la9f/OIPnUcW7KFg==",
       "type": "package",
-      "path": "skiasharp.nativeassets.macos/2.88.0-preview.179",
+      "path": "skiasharp.nativeassets.macos/2.88.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -516,14 +516,14 @@
         "lib/netstandard1.3/_._",
         "lib/xamarinmac2.0/_._",
         "runtimes/osx/native/libSkiaSharp.dylib",
-        "skiasharp.nativeassets.macos.2.88.0-preview.179.nupkg.sha512",
+        "skiasharp.nativeassets.macos.2.88.0.nupkg.sha512",
         "skiasharp.nativeassets.macos.nuspec"
       ]
     },
-    "SkiaSharp.NativeAssets.Win32/2.88.0-preview.179": {
-      "sha512": "w/W/I/C27V6QyqG0AcdlnIoFhmgno5Rn8pxbCajOAxAALMcubriVj9ALJsxjXvI2tlhNoR+Cl34s+jUP6lYBTw==",
+    "SkiaSharp.NativeAssets.Win32/2.88.0": {
+      "sha512": "R//VHCO/FTBtDMyYTzazuqLU8QOczapgf9FIC6Hw2SodP79CYu27+fdGS0fL9bt1qKCCitlI22QWSniPLG8YJg==",
       "type": "package",
-      "path": "skiasharp.nativeassets.win32/2.88.0-preview.179",
+      "path": "skiasharp.nativeassets.win32/2.88.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -536,103 +536,134 @@
         "runtimes/win-arm64/native/libSkiaSharp.dll",
         "runtimes/win-x64/native/libSkiaSharp.dll",
         "runtimes/win-x86/native/libSkiaSharp.dll",
-        "skiasharp.nativeassets.win32.2.88.0-preview.179.nupkg.sha512",
+        "skiasharp.nativeassets.win32.2.88.0.nupkg.sha512",
         "skiasharp.nativeassets.win32.nuspec"
       ]
     },
-    "SkiaSharp.Views/2.80.3": {
-      "sha512": "2KFwV6j/mUmrJU8YgRvsihn3J2UCPh2PyX97N+71CCLq1Uc85fZwR3D8LZf7/Ec5bOlSP+1Wk98gKcRrk4mMZg==",
+    "SkiaSharp.Views/2.88.0": {
+      "sha512": "Mu/jQwvRb2LSROcBFH2UPmIAsw7Nijmwa6sBkx3fJ2wLi4c696XGCAmT8qi15LzO2AdSjiQiWjoLe8jNcDTaDQ==",
       "type": "package",
-      "path": "skiasharp.views/2.80.3",
+      "path": "skiasharp.views/2.88.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "lib/monoandroid1.0/SkiaSharp.Views.Android.dll",
+        "lib/monoandroid1.0/SkiaSharp.Views.Android.pdb",
         "lib/monoandroid1.0/SkiaSharp.Views.Android.xml",
         "lib/net462/SkiaSharp.Views.Desktop.dll",
+        "lib/net462/SkiaSharp.Views.Desktop.pdb",
         "lib/net462/SkiaSharp.Views.Desktop.xml",
+        "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll",
+        "lib/net6.0-android30.0/SkiaSharp.Views.Android.pdb",
+        "lib/net6.0-android30.0/SkiaSharp.Views.Android.xml",
+        "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll",
+        "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.pdb",
+        "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.xml",
+        "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll",
+        "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.pdb",
+        "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.xml",
+        "lib/net6.0-macos10.15/SkiaSharp.Views.Mac.dll",
+        "lib/net6.0-macos10.15/SkiaSharp.Views.Mac.pdb",
+        "lib/net6.0-macos10.15/SkiaSharp.Views.Mac.xml",
+        "lib/net6.0-tvos13.4/SkiaSharp.Views.tvOS.dll",
+        "lib/net6.0-tvos13.4/SkiaSharp.Views.tvOS.pdb",
+        "lib/net6.0-tvos13.4/SkiaSharp.Views.tvOS.xml",
         "lib/tizen40/SkiaSharp.Views.Tizen.dll",
+        "lib/tizen40/SkiaSharp.Views.Tizen.pdb",
         "lib/tizen40/SkiaSharp.Views.Tizen.xml",
         "lib/uap10.0/SkiaSharp.Views.UWP.dll",
+        "lib/uap10.0/SkiaSharp.Views.UWP.pdb",
         "lib/uap10.0/SkiaSharp.Views.UWP.xml",
         "lib/xamarinios1.0/SkiaSharp.Views.iOS.dll",
+        "lib/xamarinios1.0/SkiaSharp.Views.iOS.pdb",
         "lib/xamarinios1.0/SkiaSharp.Views.iOS.xml",
         "lib/xamarinmac2.0/SkiaSharp.Views.Mac.dll",
+        "lib/xamarinmac2.0/SkiaSharp.Views.Mac.pdb",
         "lib/xamarinmac2.0/SkiaSharp.Views.Mac.xml",
         "lib/xamarintvos1.0/SkiaSharp.Views.tvOS.dll",
+        "lib/xamarintvos1.0/SkiaSharp.Views.tvOS.pdb",
         "lib/xamarintvos1.0/SkiaSharp.Views.tvOS.xml",
         "lib/xamarinwatchos1.0/SkiaSharp.Views.watchOS.dll",
+        "lib/xamarinwatchos1.0/SkiaSharp.Views.watchOS.pdb",
         "lib/xamarinwatchos1.0/SkiaSharp.Views.watchOS.xml",
         "runtimes/win10-arm/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
         "runtimes/win10-arm64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
         "runtimes/win10-x64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
         "runtimes/win10-x86/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
-        "skiasharp.views.2.80.3.nupkg.sha512",
+        "skiasharp.views.2.88.0.nupkg.sha512",
         "skiasharp.views.nuspec"
       ]
     },
-    "SkiaSharp.Views.Desktop.Common/2.80.3": {
-      "sha512": "CMQu9fr3BxGRsRryDC6lkYbYaSI2CI+RqisFX0WIdbOdbigUOLhqchmKIMb4EdFAZk13vk862qiE9v97iDZS7g==",
+    "SkiaSharp.Views.Desktop.Common/2.88.0": {
+      "sha512": "h5A/av8WNDkqI668ZqiLfJgiv4tgPVBVviaeoordZ+98EQWbfm5yAXC+uM+3GqqIUx1MLT4U2fHZG1Mh5cRTqw==",
       "type": "package",
-      "path": "skiasharp.views.desktop.common/2.80.3",
+      "path": "skiasharp.views.desktop.common/2.88.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "lib/net462/SkiaSharp.Views.Desktop.Common.dll",
+        "lib/net462/SkiaSharp.Views.Desktop.Common.pdb",
         "lib/net462/SkiaSharp.Views.Desktop.Common.xml",
         "lib/netcoreapp3.1/SkiaSharp.Views.Desktop.Common.dll",
+        "lib/netcoreapp3.1/SkiaSharp.Views.Desktop.Common.pdb",
         "lib/netcoreapp3.1/SkiaSharp.Views.Desktop.Common.xml",
         "lib/netstandard2.0/SkiaSharp.Views.Desktop.Common.dll",
+        "lib/netstandard2.0/SkiaSharp.Views.Desktop.Common.pdb",
         "lib/netstandard2.0/SkiaSharp.Views.Desktop.Common.xml",
-        "skiasharp.views.desktop.common.2.80.3.nupkg.sha512",
+        "skiasharp.views.desktop.common.2.88.0.nupkg.sha512",
         "skiasharp.views.desktop.common.nuspec"
       ]
     },
-    "SkiaSharp.Views.Gtk2/2.80.3": {
-      "sha512": "m7hYY/fTlvYRD8RvHzBxCNWji/LJl/5lqDHcH+6EhZ2o5tIICmankIpMJPIYO4UM9SgOEtdcON1t82VZSU4nlQ==",
+    "SkiaSharp.Views.Gtk2/2.88.0": {
+      "sha512": "bzRwVrjywXxwJTxMj9wl43qfYUFIb+lPuO71NnsmLRHksWnnszw9fAa46z4xShGA6dfu7yqX/tMBXDLy2kppvg==",
       "type": "package",
-      "path": "skiasharp.views.gtk2/2.80.3",
+      "path": "skiasharp.views.gtk2/2.88.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "lib/net462/SkiaSharp.Views.Gtk.dll",
+        "lib/net462/SkiaSharp.Views.Gtk.pdb",
         "lib/net462/SkiaSharp.Views.Gtk.xml",
-        "skiasharp.views.gtk2.2.80.3.nupkg.sha512",
+        "skiasharp.views.gtk2.2.88.0.nupkg.sha512",
         "skiasharp.views.gtk2.nuspec"
       ]
     },
-    "SkiaSharp.Views.WindowsForms/2.80.3": {
-      "sha512": "XtTPYxx0loAbkBsljaRe5J5d2GvPjzBtNQMk8HPMwtRcAl/IEnn5xNQLMrBknFNYZnlQYgX1c3SlG9v/Ncq02g==",
+    "SkiaSharp.Views.WindowsForms/2.88.0": {
+      "sha512": "3Dv2yics5g3ig7XMJjtWVyXIsWI1WRP044U0eL4l8HTXtivUAjt8CeBnMHTJEwIcsxCODQzbv9vblx+o6PzOXg==",
       "type": "package",
-      "path": "skiasharp.views.windowsforms/2.80.3",
+      "path": "skiasharp.views.windowsforms/2.88.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "lib/net462/SkiaSharp.Views.WindowsForms.dll",
+        "lib/net462/SkiaSharp.Views.WindowsForms.pdb",
         "lib/net462/SkiaSharp.Views.WindowsForms.xml",
         "lib/netcoreapp3.1/SkiaSharp.Views.WindowsForms.dll",
+        "lib/netcoreapp3.1/SkiaSharp.Views.WindowsForms.pdb",
         "lib/netcoreapp3.1/SkiaSharp.Views.WindowsForms.xml",
-        "skiasharp.views.windowsforms.2.80.3.nupkg.sha512",
+        "skiasharp.views.windowsforms.2.88.0.nupkg.sha512",
         "skiasharp.views.windowsforms.nuspec"
       ]
     },
-    "SkiaSharp.Views.WPF/2.80.3": {
-      "sha512": "oKUMm7WzFeoie6rW5nnwSGKZ94misyRsAc1wU6SEqgd6ssW17nyfohHxHuBHtmpLtIRwvjhfAu3cMLrpX/oNcw==",
+    "SkiaSharp.Views.WPF/2.88.0": {
+      "sha512": "dyPGImG9pyoDkwo4cXDyO+GB7iU5DYbGGmUJX8oIlg+25JB6WvznjZYurQ2+lRJlV4BSFDfX4xLRh4Iz0L0/0w==",
       "type": "package",
-      "path": "skiasharp.views.wpf/2.80.3",
+      "path": "skiasharp.views.wpf/2.88.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.txt",
         "lib/net462/SkiaSharp.Views.WPF.dll",
+        "lib/net462/SkiaSharp.Views.WPF.pdb",
         "lib/net462/SkiaSharp.Views.WPF.xml",
         "lib/netcoreapp3.1/SkiaSharp.Views.WPF.dll",
+        "lib/netcoreapp3.1/SkiaSharp.Views.WPF.pdb",
         "lib/netcoreapp3.1/SkiaSharp.Views.WPF.xml",
-        "skiasharp.views.wpf.2.80.3.nupkg.sha512",
+        "skiasharp.views.wpf.2.88.0.nupkg.sha512",
         "skiasharp.views.wpf.nuspec"
       ]
     },
@@ -741,10 +772,10 @@
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "MathNet.Numerics >= 5.0.0",
-      "Microsoft.Maui.Graphics >= 6.0.200-preview.13.935",
-      "Microsoft.Maui.Graphics.Skia >= 6.0.200-preview.13.935",
-      "SkiaSharp.Views >= 2.80.3",
-      "SkiaSharp.Views.Desktop.Common >= 2.80.3",
+      "Microsoft.Maui.Graphics >= 6.0.300",
+      "Microsoft.Maui.Graphics.Skia >= 6.0.300",
+      "SkiaSharp.Views >= 2.88.0",
+      "SkiaSharp.Views.Desktop.Common >= 2.88.0",
       "alglib.net >= 3.18.2"
     ]
   },
@@ -755,11 +786,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Temp\\Adventure_in_Maui_Graphics\\Adventure_in_Maui_Graphics.csproj",
+      "projectUniqueName": "H:\\Adventure_in_Maui_Graphics\\Adventure_in_Maui_Graphics.csproj",
       "projectName": "Adventure_in_Maui_Graphics",
-      "projectPath": "C:\\Temp\\Adventure_in_Maui_Graphics\\Adventure_in_Maui_Graphics.csproj",
+      "projectPath": "H:\\Adventure_in_Maui_Graphics\\Adventure_in_Maui_Graphics.csproj",
       "packagesPath": "C:\\Users\\cbrau\\.nuget\\packages\\",
-      "outputPath": "C:\\Temp\\Adventure_in_Maui_Graphics\\obj\\",
+      "outputPath": "H:\\Adventure_in_Maui_Graphics\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -802,19 +833,19 @@
           },
           "Microsoft.Maui.Graphics": {
             "target": "Package",
-            "version": "[6.0.200-preview.13.935, )"
+            "version": "[6.0.300, )"
           },
           "Microsoft.Maui.Graphics.Skia": {
             "target": "Package",
-            "version": "[6.0.200-preview.13.935, )"
+            "version": "[6.0.300, )"
           },
           "SkiaSharp.Views": {
             "target": "Package",
-            "version": "[2.80.3, )"
+            "version": "[2.88.0, )"
           },
           "SkiaSharp.Views.Desktop.Common": {
             "target": "Package",
-            "version": "[2.80.3, )"
+            "version": "[2.88.0, )"
           },
           "alglib.net": {
             "target": "Package",
@@ -839,7 +870,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300-preview.22154.4\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -8,7 +8,7 @@ internal class Meter {
 
   #region Fields
   int labelOffset;
-  float rOffset, needleLength, arcWidth;
+  float rOffset, needleLength;
   float minorTicThickness;
   float minorTicHeight;
   float majorTicThickness;
@@ -16,20 +16,40 @@ internal class Meter {
   #endregion
 
   #region Properties
-  public M_? M {  get; set; }
+  public M_ M {  get; set; }
   public float canvasWidth { get; set; } = 100;
   public float canvasHeight { get; set; } = 100;
   public float centerX { get; set; }
   public float centerY { get; set; }
   public float DotRadius { get; set; } = 2.0f;
-  public float LineThickness { get; set; }
+
+  private float lineThickness = 2.0f;
+  public float LineThickness {
+    get {
+      return lineThickness;
+    }
+    set {
+      lineThickness = value;
+      M.LineThickness = lineThickness;
+      Debug.WriteLine($"LineThickness is now {LineThickness}");
+    }
+  }
   public float Radius { get; set; }
-  public float FontSize { get; set; } = 24;
+
+  private float fontSize = 18;
+  public float FontSize {
+    get => fontSize;
+    set {
+      fontSize = value;
+      M.FontSize = fontSize;
+    }
+  }
   public int Offset { get; set; } = 150;
   public float tickLength { get; set; } = 30f;
   public float Radius1 { get => Radius; set => Radius = value; }
   #endregion
 
+  #region DrawMeter
   public void DrawMeter(string symbol, double trin, double indexChg) {
     if (M == null) {
       Debug.WriteLine("M is null in DrawMeter.");
@@ -50,8 +70,8 @@ internal class Meter {
     minorTicThickness = 2f;
     needleLength = Radius - majorTicHeight - 25f;
     labelOffset = 20;
-    arcWidth = 4f;
     rOffset = 4f;
+    FontSize = 20;
 
     M.DrawFilledCircle(centerX, centerY, Radius, Colors.Black);
 
@@ -146,7 +166,9 @@ internal class Meter {
       }
     }
   }
+  #endregion
 
+  #region SetNeedle
   public void SetNeedle(double trin, double indexChg) {
     try {
       float angle = -90.0f * (float) trin;
@@ -173,26 +195,9 @@ internal class Meter {
       Debug.WriteLine("MeterFaces.txt", "SetNeedle", ex.Message);
     }
   }
+  #endregion
 
-  private void DrawBuyArc() {
-    var X = canvasWidth / 2.0;
-    var Y = canvasHeight/2.0 - 20.0;
-    var radius = canvasHeight / 2.0 - 20.0;
-    if (M == null) {
-      Debug.WriteLine("M is null in DrawBuyArc.");
-      return;
-    }
-    M.DrawArc(x: X,
-              y: Y,
-              width: radius,
-              height: radius,
-              startAngle: 0.0,
-              endAngle: 90.0,
-              clockwise: false,
-              closed: false,
-              Colors.Green);
-  }
-
+  #region GetPoint
   private Point GetPoint(float originY,
                          float length,
                          double trin) 
@@ -208,76 +213,6 @@ internal class Meter {
     var point = new Point(x, y);
     return point;
   }
+  #endregion
 
-  private void DrawSellArc(ICanvas canvas) {
-    var originX = (canvasWidth + canvasHeight) / 2;
-    var originY = canvasHeight - centerY;  // Cartesian coordinates
-    var length = (float) (Radius1 + arcWidth / 2.0);
-
-    var startPoint = GetPoint(originY, length, 3.0);
-    var endPoint = GetPoint(originY, length, 3.8);
-
-    var linearGradientPaint = new LinearGradientPaint {
-      StartColor = Colors.White,
-      EndColor = Colors.Red,
-      StartPoint = new Point(0.5, 0),
-      EndPoint = new Point(0.5, 1)
-    };
-
-    var width = 200;
-    var height = 200;
-    canvas.StrokeSize = 4;
-    canvas.FillArc(x: originX,
-                    y: originY,
-                    width: width,
-                    height: height,
-                    startAngle: 90.0f,
-                    endAngle: 380.0f,
-                    clockwise: false);
-
-    canvas.DrawArc(x: originX,
-                   y: originY,
-                   width: width,
-                   height: height,
-                   startAngle: 80,
-                   endAngle: 390,
-                   clockwise: false,
-                   closed: false);
-  }
-
-  private void DrawSellArc2(ICanvas canvas) {
-    var originX = (canvasWidth + canvasHeight) / 2;
-    var originY = canvasHeight - centerY;  // Cartesian coordinates
-    var length = (float) (Radius1 + arcWidth / 2.0);
-
-    var startPoint = GetPoint(originY, length, 3.0);
-    var endPoint = GetPoint(originY, length, 3.8);
-
-    var linearGradientPaint = new LinearGradientPaint {
-      StartColor = Colors.White,
-      EndColor = Colors.Red,
-      StartPoint = new Point(0.5, 0),
-      EndPoint = new Point(0.5, 1)
-    };
-
-    var width = 200;
-    var height = 200;
-    canvas.StrokeSize = 4;
-    canvas.FillArc(x: originX,
-                    y: originY,
-                    width: width,
-                    height: height,
-                    startAngle: 90.0f,
-                    endAngle: 380.0f,
-                    clockwise:false);
-
-    canvas.DrawArc(x:originX, 
-                    y:originY,
-                    width:width,
-                    height:height,
-                    startAngle:80, 
-                    endAngle:390, 
-                    clockwise:false, 
-                    closed:false);
-  }
 }

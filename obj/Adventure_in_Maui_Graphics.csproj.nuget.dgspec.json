@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Temp\\Adventure_in_Maui_Graphics\\Adventure_in_Maui_Graphics.csproj": {}
+    "H:\\Adventure_in_Maui_Graphics\\Adventure_in_Maui_Graphics.csproj": {}
   },
   "projects": {
-    "C:\\Temp\\Adventure_in_Maui_Graphics\\Adventure_in_Maui_Graphics.csproj": {
+    "H:\\Adventure_in_Maui_Graphics\\Adventure_in_Maui_Graphics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Temp\\Adventure_in_Maui_Graphics\\Adventure_in_Maui_Graphics.csproj",
+        "projectUniqueName": "H:\\Adventure_in_Maui_Graphics\\Adventure_in_Maui_Graphics.csproj",
         "projectName": "Adventure_in_Maui_Graphics",
-        "projectPath": "C:\\Temp\\Adventure_in_Maui_Graphics\\Adventure_in_Maui_Graphics.csproj",
+        "projectPath": "H:\\Adventure_in_Maui_Graphics\\Adventure_in_Maui_Graphics.csproj",
         "packagesPath": "C:\\Users\\cbrau\\.nuget\\packages\\",
-        "outputPath": "C:\\Temp\\Adventure_in_Maui_Graphics\\obj\\",
+        "outputPath": "H:\\Adventure_in_Maui_Graphics\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -54,19 +54,19 @@
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[6.0.200-preview.13.935, )"
+              "version": "[6.0.300, )"
             },
             "Microsoft.Maui.Graphics.Skia": {
               "target": "Package",
-              "version": "[6.0.200-preview.13.935, )"
+              "version": "[6.0.300, )"
             },
             "SkiaSharp.Views": {
               "target": "Package",
-              "version": "[2.80.3, )"
+              "version": "[2.88.0, )"
             },
             "SkiaSharp.Views.Desktop.Common": {
               "target": "Package",
-              "version": "[2.80.3, )"
+              "version": "[2.88.0, )"
             },
             "alglib.net": {
               "target": "Package",
@@ -91,7 +91,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300-preview.22154.4\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

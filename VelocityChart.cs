@@ -42,7 +42,7 @@ internal class VelocityChart {
     canvasHeight = M.canvasHeight;
     M.EraseChart();
     M.LineThickness = 1.0f;
-    M.FontSize = 20f;
+    M.FontSize = 18f;
     lowerLeft = new Point(offset, offset);
     x = x_;
     y = y_;
